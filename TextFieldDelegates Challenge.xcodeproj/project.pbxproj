@@ -13,6 +13,8 @@
 		01F3A2711B1C433000985F49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F3A2701B1C433000985F49 /* Images.xcassets */; };
 		01F3A2741B1C433000985F49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F3A2721B1C433000985F49 /* LaunchScreen.xib */; };
 		01F3A2801B1C433100985F49 /* TextFieldDelegates_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3A27F1B1C433100985F49 /* TextFieldDelegates_ChallengeTests.swift */; };
+		01F3A28A1B1C44DD00985F49 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3A2891B1C44DD00985F49 /* ZipCodeTextFieldDelegate.swift */; };
+		01F3A28C1B1C44F300985F49 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3A28B1B1C44F300985F49 /* CashTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		01F3A2791B1C433100985F49 /* TextFieldDelegates ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TextFieldDelegates ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F3A27E1B1C433100985F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F3A27F1B1C433100985F49 /* TextFieldDelegates_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegates_ChallengeTests.swift; sourceTree = "<group>"; };
+		01F3A2891B1C44DD00985F49 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		01F3A28B1B1C44F300985F49 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				01F3A2701B1C433000985F49 /* Images.xcassets */,
 				01F3A2721B1C433000985F49 /* LaunchScreen.xib */,
 				01F3A2671B1C433000985F49 /* Supporting Files */,
+				01F3A2891B1C44DD00985F49 /* ZipCodeTextFieldDelegate.swift */,
+				01F3A28B1B1C44F300985F49 /* CashTextFieldDelegate.swift */,
 			);
 			path = "TextFieldDelegates Challenge";
 			sourceTree = "<group>";
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				01F3A26C1B1C433000985F49 /* ViewController.swift in Sources */,
+				01F3A28C1B1C44F300985F49 /* CashTextFieldDelegate.swift in Sources */,
+				01F3A28A1B1C44DD00985F49 /* ZipCodeTextFieldDelegate.swift in Sources */,
 				01F3A26A1B1C433000985F49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

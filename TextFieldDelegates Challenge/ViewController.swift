@@ -8,18 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var zipCodeTextField: UITextField!
+    @IBOutlet weak var cashTextField: UITextField!
+    @IBOutlet weak var toggledTextField: UITextField!
+    @IBOutlet weak var textFieldToggle: UISwitch!
+    
+    let zipCodeTextFieldDelegate = ZipCodeTextFieldDelegate()
+    let cashTextFieldDelegate = CashTextFieldDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Set our delegates
+        self.zipCodeTextField.delegate = zipCodeTextFieldDelegate
+        self.cashTextField.delegate = cashTextFieldDelegate
+        self.toggledTextField.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        // Don't allow them to edit unless the toggle is on
+        return textFieldToggle.on
     }
 
-
+    @IBAction func textFieldToggleChange(sender: UISwitch) {
+        // If they're currently editing, and the toggle just went off, stop them
+        if !textFieldToggle.on && toggledTextField.editing {
+            toggledTextField.endEditing(true)
+        }
+    }
 }
 
